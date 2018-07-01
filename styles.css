@@ -1,0 +1,76 @@
+/* Tamagotchi so pretty! */
+body::after {
+  content: "";
+  background: url("assets/bg.jpg") no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+#hatch.hide {
+  display: none;
+}
+.navbar-nav {
+  width: 100%;
+}
+.nav-item .fas {
+  font-size: 2em;
+}
+.wrapper {
+  margin: auto;
+  height: 100vh;
+  text-align: center;
+}
+#hatch {
+  margin-top: 400px;
+  bottom: 100px;
+  position: absolute;
+}
+.center-stage {
+  height: 300px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -70px;
+  position: absolute;
+}
+.pizza {
+  background: url('assets/pizza.png') no-repeat;
+  background-size: contain;
+  height: 75px;
+  width: 75px;
+  margin-left: -125px;
+  top: -10%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  display: none;
+  transition: all .3s ease;
+}
+.pizza.active {
+  display: block;
+  top: 50%;
+  transition: all .3s ease;
+}
+.egg {
+  display: none;
+}
+.egg.active {
+  display: block;
+  background: url("assets/egg.png") no-repeat;
+  background-size: contain;
+}
+.pet {
+  display: none;
+  background: url("assets/03_Mametchi.svg") no-repeat;
+  background-size: contain;
+}
+.pet.active {
+  display: block;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
